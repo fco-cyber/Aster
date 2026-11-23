@@ -1,0 +1,43 @@
+<section class="view" id="v-changes" data-view="changes" aria-labelledby="h-changes">
+  <div class="vhead">
+    <p class="eyebrow">Changes</p>
+    <h2 id="h-changes">What changes, and when</h2>
+    <p class="lead">Choose your hormones and move the slider to see which changes have usually begun, which are still developing and which are near their fullest at that point. Tap any change, or any part of the body, for the detail and the evidence.</p>
+  </div>
+
+  <div class="ch-controls tool">
+    <div class="chips" role="radiogroup" aria-label="Hormones" id="chPath"><button type="button" class="chip" role="radio" aria-checked="true" data-path="fem">Estradiol (feminising)</button><button type="button" class="chip" role="radio" aria-checked="false" data-path="masc">Testosterone (masculinising)</button></div>
+    <div class="ch-slider">
+      <label for="chMonth" class="ch-label">Time on hormones: <strong id="chMonthOut">6 months</strong></label>
+      <input id="chMonth" class="rng calm" type="range" min="0" max="60" step="1" value="6" aria-describedby="chMonthHelp">
+      <div class="ch-ticks" aria-hidden="true"><span>Start</span><span>1 yr</span><span>2 yrs</span><span>3 yrs</span><span>4 yrs</span><span>5 yrs</span></div>
+      <p class="small muted" id="chMonthHelp">The slider moves a month at a time. <button type="button" class="linklike" id="chMine" hidden>Jump to my time on hormones</button></p>
+    </div>
+  </div>
+
+  <div class="ch-layout">
+    <figure class="fig svg-box body-fig">
+      <div id="bodyMap" class="bodymap"></div>
+      <figcaption>Choose a part of the body to highlight its changes. The skeleton itself (height, hands, feet, hips and jaw) doesn't change in adults.</figcaption>
+    </figure>
+    <div class="ch-now" id="chNow" aria-live="polite"></div>
+  </div>
+
+  <figure class="fig svg-box">
+    <div class="ch-legend" aria-hidden="true"><span class="lgi"><span class="lg l1"></span>Usually starts</span><span class="lgi"><span class="lg l2"></span>Keeps developing</span><span class="lgi"><span class="lg l3"></span>Usually at its fullest</span><span class="lgi"><span class="lg l4"></span>Timing not well known</span></div>
+    <div id="chTimeline" class="ch-timeline"></div>
+    <figcaption>Typical timings for adults, mostly from the Endocrine Society's tables, which its authors describe as estimates from clinical observation; a few come from studies that followed people. The studies quoted in each change sometimes differ from these estimates. "If you stop" is adapted from the AusPATH 2025 tables. The scale stretches the early months so they're easier to read. <span class="ev" data-r="ENDO2017 AUSPATH2025"></span></figcaption>
+  </figure>
+
+  <details class="acc pro"><summary><span><span class="s-title">See this as a table</span><span class="s-sub">The same timings, in words</span></span></summary><div class="acc-body" style="max-width:none"><div class="tbl-wrap"><table id="chTable"><caption class="sr-only">Expected changes and timings</caption><thead><tr><th scope="col">Change</th><th scope="col">Usually starts</th><th scope="col">Usually at its fullest</th><th scope="col">If you stop</th></tr></thead><tbody></tbody></table></div></div></details>
+
+  <section class="stack" aria-labelledby="h-vary">
+    <h3 id="h-vary">Why your timeline will be your own</h3>
+    <div class="grid">
+      <div class="card"><span class="who">Bodies differ</span><h4>Change varies widely</h4><p>How much breast growth, facial hair or voice change you get varies widely between people, much as it did in puberty. In one study, blood estradiol levels didn't predict how much breast growth happened in the first year. <span class="ev" data-g="mod" data-r="DEBLOK2018"></span></p></div>
+      <div class="card"><span class="who">Patience</span><h4>Slow is normal</h4><p>Breast growth is mostly in the first six months, then volume keeps creeping up for at least three years. <span class="ev" data-g="mod" data-r="DEBLOK2018 DEBLOK2021"></span> Facial hair keeps filling in for four to five years. <span class="ev" data-r="ENDO2017"></span> In studies, blood hormone levels didn't predict how much breast growth or voice change people had, and higher doses of cyproterone brought more side effects without lowering testosterone further. <span class="ev" data-g="mod" data-r="DEBLOK2018 NYGREN2016 KUIJPERS2021"></span></p></div>
+      <div class="card"><span class="who">Comparison</span><h4>Online timelines aren't yours</h4><p>Photo timelines online are usually the most dramatic cases. Comparing with your own photos from a few months ago is kinder and more accurate.</p></div>
+      <div class="card"><span class="who">What stays</span><h4>Bones don't change shape</h4><p>Once growth plates have closed in adulthood, hormones don't change height, the size of hands and feet, the width of the shoulders and hips, or the shape of the jaw. Surgery, voice training, hair removal and clothing can do things hormones can't. <span class="ev" data-r="AUSPATH2025"></span></p></div>
+    </div>
+  </section>
+</section>

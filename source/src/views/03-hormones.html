@@ -1,0 +1,72 @@
+<section class="view" id="v-hormones" data-view="hormones" aria-labelledby="h-hormones">
+  <div class="vhead">
+    <p class="eyebrow">Hormones</p>
+    <h2 id="h-hormones">How hormones work</h2>
+    <p class="lead">Gender-affirming hormone therapy uses the body's own messengers to reshape it, slowly, toward your gender. Knowing how the system works makes it easier to understand the medicines, the blood tests and the timeline.</p>
+  </div>
+
+  <section class="stack" aria-labelledby="h-loop">
+    <h3 id="h-loop">The control loop in your body</h3>
+    <p>Sex hormones are controlled by a loop between your brain and your gonads (the testes or ovaries). The <strong>hypothalamus</strong>, deep in the brain, sends a signal to the <button class="t" data-t="pituitary">pituitary gland</button>. The pituitary then sends two hormones, LH and FSH, through the blood to the gonads, which make testosterone or estradiol. When those levels rise, the brain eases off its signal, a thermostat-like brake called <button class="t" data-t="feedback">negative feedback</button>. Hormone therapy works by adding the hormone you want and, where needed, lowering or blocking the one you don't. <span class="ev" data-r="ENDO2017 CHEUNG2019"></span></p>
+    <div class="chips" role="radiogroup" aria-label="Show the loop for" id="axisPick"><button type="button" class="chip" role="radio" aria-checked="true" data-axis="fem">Feminising (estradiol)</button><button type="button" class="chip" role="radio" aria-checked="false" data-axis="masc">Masculinising (testosterone)</button></div>
+    <figure class="fig svg-box axis-fig">
+      <div id="axisFig" class="axis-wrap"></div>
+      <figcaption id="axisCap"></figcaption>
+    </figure>
+  </section>
+
+  <section class="stack" aria-labelledby="h-meds">
+    <h3 id="h-meds">The medicines</h3>
+    <div class="grid two-up">
+      <div class="card"><span class="who">Feminising</span><h4>Estradiol, usually with an anti-androgen</h4>
+        <p><strong>Estradiol</strong> (the main oestrogen) can be a skin patch, a gel rubbed in daily, or a daily tablet; some people use an implant under the skin, which in Australia is a specially made (compounded) product rather than a TGA-approved one. Patches and gel may be preferred if you have a higher risk of blood clots, for example if you smoke, are over 45, live with obesity or have a clotting condition, because unlike tablets they don't appear to raise clot risk. <span class="ev" data-r="AUSPATH2025 CHEUNG2019"></span></p>
+        <p>An <button class="t" data-t="antiandrogen">anti-androgen</button> is usually added to bring testosterone down: in Australia, <button class="t" data-t="cpa">cyproterone acetate</button> at a low dose, or <button class="t" data-t="spiro">spironolactone</button>. Low-dose cyproterone (10 mg a day) lowered testosterone as well as higher doses, with fewer side effects. If the testes are removed, anti-androgens are no longer needed. <span class="ev" data-g="mod" data-r="KUIJPERS2021 AUSPATH2025"></span></p>
+        <p class="small muted">Some people add progesterone. The evidence for benefit is limited, so it's reviewed after 3 to 6 months. <span class="ev" data-r="AUSPATH2025"></span></p></div>
+      <div class="card"><span class="who">Masculinising</span><h4>Testosterone</h4>
+        <p><strong>Testosterone</strong> can be an injection into a muscle, either every 2 to 4 weeks or, in the long-acting form, usually every 10 to 14 weeks, or a gel or cream applied to the skin each day. <span class="ev" data-r="CHEUNG2019 AUSPATH2025"></span></p>
+        <p>In the skin and hair roots, some testosterone is turned into a stronger form, <button class="t" data-t="dht">DHT</button>, which drives facial hair and acne. A small amount is turned into estradiol by <button class="t" data-t="aromatase">aromatase</button>, which helps keep bones strong. The ovaries go quiet and periods usually stop, but <strong>testosterone is not contraception</strong>. <span class="ev" data-r="ENDO2017 AUSPATH2025"></span></p>
+        <p class="small muted">Testosterone subsidised on the PBS needs a one-off second opinion from an endocrinologist, urologist or sexual health physician. <span class="ev" data-r="AUSPATH2025"></span></p></div>
+    </div>
+    <div class="note soft"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v5h1"/></svg><p><strong>Non-binary and lower-dose paths.</strong> Some people want only some changes, or want them more slowly. Doses and timing can be adjusted, but changes can't be fully picked one by one, because several come together. Research on non-binary people's hormone care is still limited, so it's worked out individually. Whatever the dose, levels need to stay high enough to protect your bones. <span class="ev" data-r="SOC8 AUSPATH2025"></span></p></div>
+  </section>
+
+  <section class="stack" aria-labelledby="h-perm">
+    <h3 id="h-perm">What lasts, what eases, and what hormones can't change</h3>
+    <p>Before you start, it helps to know which changes may stay even if you stop, which usually ease, and which hormones can't touch at all. This is the core of <button class="t" data-t="consent">informed consent</button>. <span class="ev" data-r="AUSPATH2025 ENDO2017"></span></p>
+    <div class="chips" role="radiogroup" aria-label="Show changes for" id="permPick"><button type="button" class="chip" role="radio" aria-checked="true" data-perm="fem">Estradiol</button><button type="button" class="chip" role="radio" aria-checked="false" data-perm="masc">Testosterone</button></div>
+    <div class="perm" id="permFem">
+      <div class="perm-col p1"><h4>Likely to last</h4><ul><li>Breast and nipple growth</li><li>Lower fertility, which may be permanent</li><li>Smaller testes and genitals</li></ul></div>
+      <div class="perm-col p2"><h4>May not fully reverse</h4><ul><li>Softer skin</li><li>Slower facial and body hair growth</li><li>Fat and muscle in a more feminine pattern</li><li>Changes in sex drive, erections and ejaculation</li></ul></div>
+      <div class="perm-col p3"><h4>Usually eases if you stop</h4><ul><li>Breast or nipple tenderness</li><li>Tiredness and mood changes from the medicines</li></ul></div>
+      <div class="perm-col p4"><h4>Hormones won't change</h4><ul><li>Height, hands, feet and skeleton</li><li>Voice pitch (voice training helps)</li><li>Existing balding</li><li>Facial hair still grows, more slowly; laser or electrolysis removes it</li></ul></div>
+    </div>
+    <div class="perm" id="permMasc" hidden>
+      <div class="perm-col p1"><h4>Likely to last</h4><ul><li>A deeper voice</li><li>Growth of the clitoris (phallus)</li><li>Facial and body hair</li><li>Scalp hair loss, in some people</li></ul></div>
+      <div class="perm-col p2"><h4>May not fully reverse</h4><ul><li>Coarser skin</li></ul></div>
+      <div class="perm-col p3"><h4>Usually eases if you stop</h4><ul><li>Periods stopping</li><li>Higher sex drive</li><li>Extra muscle and a more masculine fat pattern</li><li>Vaginal dryness</li></ul></div>
+      <div class="perm-col p4"><h4>Hormones won't change</h4><ul><li>Height, hands, feet and skeleton</li><li>Breast tissue (it doesn't shrink much)</li><li>Speech patterns and intonation, which are learned</li></ul></div>
+    </div>
+    <p class="small muted">Adapted from the AusPATH 2025 Standards of Care tables, which sort changes into potentially permanent and reversible ones. Here the potentially permanent changes are split into those that usually last and those that may not fully reverse. Other guidelines classify some changes differently, and how much each person changes varies.</p>
+  </section>
+
+  <section class="stack" aria-labelledby="h-fert">
+    <h3 id="h-fert">Fertility and contraception</h3>
+    <div class="grid two-up">
+      <div class="card"><h4>Fertility can fall, possibly for good</h4><p>Hormone therapy may reduce fertility and could make it permanent, though the evidence on how often is limited. Stopping hormones may restore it, but that isn't guaranteed. You'll be offered fertility counselling before you start; it's your choice whether to store sperm or eggs. <span class="ev" data-r="AUSPATH2025"></span></p><p>If you tuck, pausing for three to four months before giving sperm samples may help: tucking has been linked with lower sperm quality. <span class="ev" data-g="weak" data-r="DENIE2022 MANAFI2026"></span></p></div>
+      <div class="card"><h4>Testosterone is not contraception</h4><p>Pregnancy can happen on testosterone, and testosterone can harm a developing baby (it's a <button class="t" data-t="teratogen">teratogen</button>). If you have a uterus and ovaries and have sex that could lead to pregnancy, use contraception before, during and for a while after testosterone. <span class="ev" data-g="weak" data-r="AUSPATH2025 LIGHT2014"></span></p><p>Estradiol isn't contraception either: sperm production falls slowly and unpredictably, so pregnancy with a partner is still possible. <span class="ev" data-r="ENDO2017"></span></p></div>
+    </div>
+  </section>
+
+  <section class="stack" aria-labelledby="h-consent">
+    <h3 id="h-consent">Starting in Australia: informed consent</h3>
+    <p>For adults, Australian standards treat starting hormones as a decision you make with your doctor once you understand it, not something you have to earn. It is still a careful process. <span class="ev" data-r="AUSPATH2025 CHEUNG2019"></span></p>
+    <ol class="steps">
+      <li><strong>Talk about your goals.</strong> What you hope will change, what worries you, and what you'd like to keep.</li>
+      <li><strong>Go through benefits, risks and limits.</strong> Including the permanent changes above, fertility, and your own health history, such as smoking or clotting problems.</li>
+      <li><strong>Baseline tests.</strong> Blood tests for blood count, kidneys, liver and hormone levels, and a blood pressure check.</li>
+      <li><strong>Sign a consent form,</strong> often AusPATH's, and start at a dose that is adjusted gradually.</li>
+      <li><strong>Review every 3 to 4 months in the first year,</strong> then once a year when things are stable.</li>
+    </ol>
+    <p class="small muted">You can pause, change or stop at any time. Stopping isn't failure, and isn't the same as regret. <span class="ev" data-r="AUSPATH2025"></span></p>
+  </section>
+</section>

@@ -1,0 +1,56 @@
+<section class="view wide" id="v-evidence" data-view="evidence" aria-labelledby="h-evidence">
+  <div class="vhead">
+    <p class="eyebrow">How we know</p>
+    <h2 id="h-evidence">Evidence library</h2>
+    <p class="lead">Every claim in Aster links to its sources. Here is how they were chosen and graded, what the evidence does not support, and the full list, with who each study included.</p>
+  </div>
+
+  <section class="stack" aria-labelledby="h-grades">
+    <h3 id="h-grades">How claims are graded</h3>
+    <div class="grades">
+      <div><span class="g g-strong">Strong</span><p>Consistent results from several good <button class="t" data-t="rct">randomised trials</button>, or from very large, well-run studies. Unlikely to change.</p></div>
+      <div><span class="g g-mod">Moderate</span><p>Good evidence with limits: a single or open-label trial, or consistent <button class="t" data-t="cohort">cohort studies</button> that follow people over time and show links rather than proof of cause. Could change.</p></div>
+      <div><span class="g g-weak">Weak</span><p>Early, small or indirect evidence: surveys at one point in time (<button class="t" data-t="crosssec">cross-sectional</button>), case series and reviews that pool them, or studies in a different group.</p></div>
+      <div><span class="g g-no">Not supported</span><p>Tested and not shown, or a claim that didn't hold up when it was checked.</p></div>
+    </div>
+    <p class="small muted">Guidelines, laws and service pages aren't graded; they're shown as sources. Guideline timings, such as the Endocrine Society's estimates of when changes happen, are shown without a grade too. "Clinical consensus" marks practical advice from clinicians' and community experience where no study exists.</p>
+  </section>
+
+  <section class="stack" aria-labelledby="h-how">
+    <h3 id="h-how">How the sources were chosen</h3>
+    <ul class="ticks">
+      <li>Australian standards come first: the AusPATH Standards of Care (2025) and the Australian position statement on hormone therapy, alongside the international WPATH Standards of Care 8 and the Endocrine Society guideline.</li>
+      <li>Studies were found in PubMed. Every PubMed record, its <button class="t" data-t="pmid">PMID</button> and DOI was retrieved and checked on 21 November 2026, rather than typed from memory.</li>
+      <li>Each source says who was studied, so you can see when a finding comes from a different group, such as young people or one country, and is being extrapolated.</li>
+      <li>Phone numbers, laws and government services were checked on the services' own websites on the same day.</li>
+      <li>A separate reviewer, who hadn't seen the app being written, then checked every claim against its source. Their 42 findings, two of them about safety advice, were all corrected before release.</li>
+    </ul>
+  </section>
+
+  <section class="stack" aria-labelledby="h-limits">
+    <h3 id="h-limits">The limits of this evidence</h3>
+    <p>Most research on gender-affirming care follows groups of people over time rather than randomly assigning treatments, because withholding wanted care is rarely ethical or acceptable. Many studies are small, come from a few specialist clinics in Europe and North America, include few non-binary people, and lose touch with some participants over the years. These limits are why many grades here are moderate or weak. They don't mean care doesn't work; they mean the size of effects is less certain. <span class="ev" data-r="ENDO2017 SOC8"></span></p>
+  </section>
+
+  <section class="stack" aria-labelledby="h-notsup">
+    <h3 id="h-notsup">What the evidence doesn't support</h3>
+    <ul class="ticks">
+      <li>That pushing hormone levels above the usual target range brings bigger or faster changes. Within usual ranges, blood estradiol levels didn't predict breast growth, and more cyproterone didn't lower testosterone further than a low dose. <span class="ev" data-g="no" data-r="DEBLOK2018 KUIJPERS2021"></span></li>
+      <li>That testosterone makes people aggressive. <span class="ev" data-g="no" data-r="DEFREYNE2018"></span></li>
+      <li>That testosterone or estradiol works as contraception. <span class="ev" data-g="no" data-r="LIGHT2014 AUSPATH2025 ENDO2017"></span></li>
+      <li>That any binding method is free of side effects. Every method studied, including purpose-made binders, was linked with symptoms. <span class="ev" data-g="no" data-r="PEITZMEIER2017"></span></li>
+      <li>That most people regret surgery: regret was about 1%. <span class="ev" data-g="no" data-r="BUSTOSREGRET"></span></li>
+      <li>The original claim from a Swedish registry study that surgery reduced later mental health treatment; it was corrected after statistical review. <span class="ev" data-g="no" data-r="BRANSTROM2020"></span></li>
+      <li>That hormones change height, hands, feet or the shape of the skeleton in adults, or that estradiol raises the voice. <span class="ev" data-r="AUSPATH2025"></span></li>
+    </ul>
+  </section>
+
+  <section class="stack" aria-labelledby="h-lib">
+    <h3 id="h-lib">All sources</h3>
+    <div class="chips" id="refTopics" role="group" aria-label="Filter by topic"></div>
+    <label class="sr-only" for="refQ">Search sources</label>
+    <input type="search" id="refQ" placeholder="Search sources, e.g. voice, binding, bone" autocomplete="off">
+    <p class="small muted" id="refCount" aria-live="polite"></p>
+    <div class="refs" id="refList"></div>
+  </section>
+</section>

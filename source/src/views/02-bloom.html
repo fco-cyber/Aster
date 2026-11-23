@@ -1,0 +1,113 @@
+<section class="view" id="v-bloom" data-view="bloom" aria-labelledby="h-bloom">
+  <div class="vhead">
+    <p class="eyebrow">Your bloom</p>
+    <h2 id="h-bloom">Moments worth marking</h2>
+    <p class="lead">Mark the moments that matter to you and watch your bloom fill in, then read about the stages many people pass through. It isn't a checklist or a race, and nothing here leaves this device.</p>
+  </div>
+
+  <div class="bloom-page">
+    <figure class="bloom-stage">
+      <div class="bloom-host" data-bloom="page"></div>
+      <figcaption aria-live="polite"></figcaption>
+    </figure>
+    <section class="tool ms-tool" id="msTool" aria-labelledby="h-ms">
+    <div class="stack" style="gap:6px"><p class="eyebrow">__I_lock__Private to this device</p><h3 id="h-ms">My moments</h3><p class="why">Mark the milestones that matter to you, big or small, and look back on how far you've come. Everything you add stays in this browser only. You can lock it with a passcode, download a copy, or clear it at any time.</p></div>
+    <div id="msLocked" class="ms-locked" hidden>
+      <p><strong>Your moments are locked.</strong> Enter your passcode to open them.</p>
+      <form id="msUnlockForm" class="row"><button class="btn primary sm" type="submit">Unlock</button></form>
+      <p class="small muted" id="msLockMsg" role="status"></p>
+      <p class="small"><button type="button" class="linklike" id="msForget">Forgotten it? Delete the locked moments and start again</button></p>
+    </div>
+    <div id="msOpen" class="stack">
+      <div class="ms-start">
+        <label class="fld inline" for="msStart"><span>I started hormones on</span><input id="msStart" type="date"></label>
+        <div class="chips" role="radiogroup" aria-label="Which hormones" id="msPath"><button type="button" class="chip" role="radio" aria-checked="false" data-path="fem">Estradiol</button><button type="button" class="chip" role="radio" aria-checked="false" data-path="masc">Testosterone</button></div>
+        <p id="msSince" class="ms-since" role="status"></p>
+      </div>
+      <div class="stack" style="gap:8px">
+        <p class="small muted"><strong>Ideas to mark.</strong> Tap one to add it with today's date; you can change the date after.</p>
+        <div class="chips" id="msIdeas"></div>
+      </div>
+      <form class="ms-add" id="msAdd">
+        <label class="fld"><span>Add your own</span><input id="msText" type="text" maxlength="120" placeholder="For example: first day at work as me"></label>
+        <label class="fld"><span>Date</span><input id="msDate" type="date"></label>
+        <button class="btn primary sm" type="submit">Add to my bloom</button>
+      </form>
+      <ol class="ms-list" id="msList" aria-live="polite"></ol>
+      <p class="small muted" id="msEmpty">Nothing here yet. Your first moment could simply be opening this guide.</p>
+      <div class="row ms-actions">
+        <button type="button" class="btn sm" id="msDownload">Download a copy</button>
+        <button type="button" class="btn sm" id="msLockBtn">Lock with a passcode</button>
+        <button type="button" class="btn sm danger" id="msClear">Clear my moments</button>
+      </div>
+      <form id="msSetLock" class="ms-setlock" hidden>
+        <p class="small">Choose a passcode of at least 4 characters. Your moments will be scrambled (encrypted) on this device and can only be opened with it. <strong>If you forget it, they can't be recovered.</strong></p>
+        <div class="row"><button class="btn primary sm" type="submit">Lock</button><button class="btn sm" type="button" id="msCancelLock">Cancel</button></div>
+      </form>
+      <p class="small muted" id="msLockState"></p>
+    </div>
+  </section>
+  </div>
+
+  <section class="stack" aria-labelledby="h-stages">
+    <div class="shead"><p class="eyebrow">The seven stages</p><h2 id="h-stages">Your journey, stage by stage</h2><p class="lead">Transition isn't a straight line or a race. These seven stages are a map, not a rulebook: you might linger in one, skip another, move back and forth, or stop where you feel at home. Each stage has its own milestones worth marking.</p></div>
+    <figure class="fig svg-box stem-box">
+      <div id="stem" class="stem"></div>
+      <figcaption>The seven stages, growing from the ground up. Choose a stage to read about it. The timings are typical for adults starting hormones in Australia, and many people take a different route.</figcaption>
+    </figure>
+    <ol class="journey" id="journeyList">
+    <li data-n="1" id="stage-1"><details class="acc"><summary><span><span class="s-title">Wondering and exploring</span><span class="s-sub">Any age, any length of time</span></span></summary><div class="acc-body">
+      <p>Many people spend months or years wondering about their gender before they say anything. You might try a different name online, notice which clothes or pronouns feel right, or read about other people's stories. Questioning doesn't commit you to anything.</p>
+      <dl class="facts">
+        <dt>You might feel</dt><dd>Curious, relieved, frightened, confused, or all of these in one day. Moments of <button class="t" data-t="euphoria">gender euphoria</button>, a quiet sense of "yes, this fits", are useful signposts. <span class="ev" data-g="weak" data-r="BEISCHEL2022"></span></dd>
+        <dt>What helps</dt><dd>Talking with other trans people, by phone at QLife or in a peer group such as Transgender Victoria's; a counsellor who works with gender diversity and won't push you either way; noting when you feel most yourself.</dd>
+        <dt>Milestones</dt><dd>Saying it out loud, even only to yourself. Telling one trusted person. Trying a name or pronouns somewhere safe.</dd>
+      </dl>
+    </div></details></li>
+    <li data-n="2" id="stage-2"><details class="acc"><summary><span><span class="s-title">Finding care</span><span class="s-sub">Weeks to months, depending on waits</span></span></summary><div class="acc-body">
+      <p>For most adults in Australia the first step is a GP. Many GPs now prescribe hormones, and the Australian Professional Association for Trans Health (AusPATH) lists experienced clinicians. In Victoria there are also specialist services: Equinox, a GP clinic for trans and gender diverse people; the Monash Health Gender Clinic, where waits can be long; and Austin Health's specialist hormone clinic, which works alongside your own doctor. <span class="ev" data-r="AUSPATH2025"></span></p>
+      <dl class="facts">
+        <dt>Bring</dt><dd>What you hope for, your questions, your medicines and health history, and a support person if you'd like one.</dd>
+        <dt>Ask</dt><dd>"Do you prescribe gender-affirming hormones, or can you refer me to someone who does?" and "Do you bulk-bill, and what will it cost?"</dd>
+        <dt>Milestones</dt><dd>Booking the first appointment. Being called by your name at the clinic for the first time.</dd>
+      </dl>
+    </div></details></li>
+    <li data-n="3" id="stage-3"><details class="acc"><summary><span><span class="s-title">Deciding together</span><span class="s-sub">One to a few appointments</span></span></summary><div class="acc-body">
+      <p>Adults in Australia usually start hormones through <button class="t" data-t="consent">informed consent</button>: your doctor makes sure you understand what hormones can and can't do, the risks, which changes are permanent, and how they may affect fertility, and then you decide. A mental health assessment isn't required, but a psychologist or counsellor is involved if you'd like one, or if other health concerns need care first. You'll have baseline blood tests. <span class="ev" data-r="AUSPATH2025 CHEUNG2019"></span></p>
+      <p>Testosterone subsidised on the <button class="t" data-t="pbs">PBS</button> needs a one-off second opinion from an endocrinologist, urologist or sexual health physician, which can be by telehealth. <span class="ev" data-r="AUSPATH2025"></span></p>
+      <dl class="facts">
+        <dt>Think about</dt><dd>Fertility. Hormones can reduce fertility, possibly for good, so storing sperm or eggs beforehand is worth discussing even if you're unsure you'll ever want children. <a href="#hormones">More on fertility</a>.</dd>
+        <dt>Milestones</dt><dd>Signing your consent. Your first blood test. Making your fertility decision, whatever it is.</dd>
+      </dl>
+    </div></details></li>
+    <li data-n="4" id="stage-4"><details class="acc"><summary><span><span class="s-title">Starting hormones</span><span class="s-sub">The first 3 months</span></span></summary><div class="acc-body">
+      <p>The first changes are often felt before they're seen. On estradiol, sexual desire and spontaneous erections usually lessen within one to three months, and some people notice tender nipples or breasts. On testosterone, skin often becomes oilier, sex drive often rises, and periods may begin to change. Your first review and blood tests usually come at around three months. <span class="ev" data-g="mod" data-r="ENDO2017 DEFREYNE2020 AUSPATH2025"></span></p>
+      <dl class="facts">
+        <dt>You might feel</dt><dd>Excited, impatient, or worried that nothing is happening. Early weeks are normal and slow; the biggest changes come later.</dd>
+        <dt>Milestones</dt><dd>Your first dose. Your first three-month check.</dd>
+      </dl>
+    </div></details></li>
+    <li data-n="5" id="stage-5"><details class="acc"><summary><span><span class="s-title">Visible change</span><span class="s-sub">About 3 to 12 months</span></span></summary><div class="acc-body">
+      <p>This is when many people start to see themselves in the mirror. On estradiol, breasts grow (most of the first year's growth happens in the first six months), skin softens and fat begins to move toward the hips. On testosterone, the voice deepens, facial and body hair start to grow, muscle builds, and for most people periods have stopped by 12 months. Reviews continue every three to four months. <span class="ev" data-g="mod" data-r="DEBLOK2018 NYGREN2016 AHMAD2017 AUSPATH2025"></span></p>
+      <dl class="facts">
+        <dt>Alongside</dt><dd>Many people change their name and pronouns at work or study, start voice training, or update documents in this period.</dd>
+        <dt>Milestones</dt><dd>A voice that feels like yours. Periods stopping. A new name on your Medicare card. A day of not thinking about your gender at all.</dd>
+      </dl>
+    </div></details></li>
+    <li data-n="6" id="stage-6"><details class="acc"><summary><span><span class="s-title">Growing into yourself</span><span class="s-sub">About 1 to 3 years</span></span></summary><div class="acc-body">
+      <p>Changes continue, more gently. Breast volume keeps increasing slowly for at least three years, and facial hair and body shape keep developing for two to five years. Once things are stable, check-ups usually drop to once a year. If you're considering surgery, this is when many people meet surgeons, and some operations ask for about six months of stable hormones first. <span class="ev" data-g="mod" data-r="DEBLOK2021 ENDO2017 SOC8"></span></p>
+      <dl class="facts">
+        <dt>You might feel</dt><dd>Calmer, and also more aware of what hormones can't change, such as height or bone structure. Both are normal.</dd>
+        <dt>Milestones</dt><dd>One year on hormones. A new birth certificate. A first surgical consultation, if that's your path.</dd>
+      </dl>
+    </div></details></li>
+    <li data-n="7" id="stage-7"><details class="acc"><summary><span><span class="s-title">Settled, and ageing well</span><span class="s-sub">Three years and beyond</span></span></summary><div class="acc-body">
+      <p>For many people, transition becomes less of a project and more of a life. Care continues: most people keep taking hormones long term, with yearly blood tests and check-ups, attention to bone and heart health, and cancer screening for the body you have now. <span class="ev" data-r="AUSPATH2025 ROBERTS2022"></span></p>
+      <dl class="facts">
+        <dt>Keep in mind</dt><dd>If your testes or ovaries are removed, you'll need to keep taking hormones to protect your bones. <a href="#safety">Health checks and screening</a>.</dd>
+        <dt>Milestones</dt><dd>Five years. Screening up to date. Helping someone else find their way.</dd>
+      </dl>
+    </div></details></li>
+  </ol>
+  </section>
+</section>

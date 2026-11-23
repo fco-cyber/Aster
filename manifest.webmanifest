@@ -1,0 +1,30 @@
+{
+  "id": "./",
+  "name": "Aster: gender-affirming care, explained with care",
+  "short_name": "Aster",
+  "description": "Honest, gently written and evidence-graded answers for trans and gender diverse adults and the people beside them: hormones and what changes when, body and movement, mind and emotions, daily life, rights and documents, a private bloom of the moments you mark, and surgery and recovery. Works without internet once installed.",
+  "lang": "en-AU",
+  "dir": "ltr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#FFF7EE",
+  "theme_color": "#6B2BD9",
+  "categories": ["health", "medical", "education"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "What changes, and when", "short_name": "Changes", "url": "./#changes", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" }] },
+    { "name": "Your bloom", "short_name": "Bloom", "url": "./#bloom", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" }] },
+    { "name": "Getting help", "short_name": "Help", "url": "./#support", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" }] }
+  ],
+  "screenshots": [
+    { "src": "screenshots/wide-start.jpg", "sizes": "1280x800", "type": "image/jpeg", "form_factor": "wide", "label": "The Aster home page, with the bloom" },
+    { "src": "screenshots/narrow-start.jpg", "sizes": "780x1688", "type": "image/jpeg", "form_factor": "narrow", "label": "Aster on a phone" },
+    { "src": "screenshots/narrow-changes.jpg", "sizes": "780x1688", "type": "image/jpeg", "form_factor": "narrow", "label": "The body map and timeline of changes on hormones" }
+  ]
+}

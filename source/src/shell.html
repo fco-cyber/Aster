@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en-AU" data-palette="violet">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Aster</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Aster: honest, gently written and evidence-graded answers for trans and gender diverse adults, and the people beside them, about gender-affirming hormones, body and movement, mind and emotions, daily life, family and rights, milestones, and surgery and recovery. Reviewed 21 November 2026.">
+<meta name="color-scheme" content="light dark">
+<!--HEAD-EXTRA-->
+<link rel="icon" href="__ICON__">
+<!--HEAD-SCRIPT-->
+<!--STYLE-->
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <div class="top-in">
+    <a class="brand" href="#home" aria-label="Aster, home">__MARK__<b>aster</b></a>
+    <nav aria-label="Main sections"><ul class="areas" id="areas"></ul></nav>
+    <div class="tools">
+      <button type="button" class="icon-btn" id="searchToggle" aria-label="Search the guide" aria-controls="searchBox" aria-expanded="false">__I_search__</button>
+      <button type="button" class="icon-btn" id="exploreBtn" aria-label="All sections" aria-haspopup="dialog">__I_grid__</button>
+      <button type="button" class="icon-btn studio-btn" id="studioBtn" aria-haspopup="dialog" aria-expanded="false" aria-controls="studio" aria-label="Colours, theme, text size and motion" title="Colours and display">__I_sliders__</button>
+      <a class="help-link" href="#support">__I_phone__<span>Help now</span></a>
+      <a class="exit-btn" id="exitBtn" href="https://www.bom.gov.au/" rel="noopener noreferrer" title="Leave quickly: opens the Bureau of Meteorology weather site. Shortcut: press Esc three times." aria-label="Leave quickly. Opens the Bureau of Meteorology weather site in place of this page.">__I_leave__<span>Leave</span></a>
+    </div>
+  </div>
+  <div class="progress" aria-hidden="true"><span id="readProg"></span></div>
+</header>
+
+<div class="search" id="searchBox" role="search">
+  __I_search__
+  <label class="sr-only" for="q">Search the guide</label>
+  <input id="q" type="search" placeholder="Search, e.g. voice, binding, bone" autocomplete="off" role="combobox" aria-autocomplete="list" aria-controls="qres" aria-expanded="false">
+  <div class="results" id="qres" role="listbox" aria-label="Search results" hidden></div>
+</div>
+
+<main id="main" tabindex="-1">
+<!--VIEWS-->
+</main>
+
+<footer class="foot">
+  <div class="foot-in">
+    <a class="brand" href="#home" aria-label="Aster, home">__MARK__<b>aster</b></a>
+    <p><strong>Aster</strong> · Information current to 21 November 2026. General information for trans and gender diverse adults and the people who support them. It does not replace advice from your GP, endocrinologist, surgeon, psychologist or other clinicians.</p>
+    <p>Written in Australian English with Australian services and law; services for other countries are in <a href="#support">Getting help</a>. The fonts are open-licence and built in, so nothing loads from other websites, and nothing you enter leaves this device.</p>
+    <p>Evidence labels: Strong, Moderate, Weak, Not supported. See the <a href="#evidence">Evidence library</a> for every source, the people studied and links to PubMed. <a href="#start">About this guide</a>.</p>
+  </div>
+</footer>
+
+<nav class="dock" aria-label="Quick navigation">
+  <a href="#home" data-dock="home">__I_home__<span>Home</span></a>
+  <button type="button" id="dockExplore" aria-haspopup="dialog">__I_grid__<span>Explore</span></button>
+  <a href="#bloom" data-dock="bloom">__I_flower__<span>Bloom</span></a>
+  <a href="#support" data-dock="support">__I_phone__<span>Help</span></a>
+</nav>
+
+<div class="studio" id="studio" role="dialog" aria-label="Colours and display" hidden>
+  <h5>Colours</h5>
+  <div class="pals" id="pals" role="radiogroup" aria-label="Colour palette"></div>
+  <h5>Light or dark</h5>
+  <div class="seg" role="group" aria-label="Light or dark"><button type="button" data-themeset="auto" aria-pressed="false">Auto</button><button type="button" data-themeset="light" aria-pressed="false">Light</button><button type="button" data-themeset="dark" aria-pressed="false">Dark</button></div>
+  <h5>Text size</h5>
+  <div class="seg" role="group" aria-label="Text size"><button type="button" data-sizeset="" aria-pressed="false">Standard</button><button type="button" data-sizeset="l" aria-pressed="false">Large</button><button type="button" data-sizeset="xl" aria-pressed="false">Larger</button></div>
+  <h5>Motion</h5>
+  <div class="seg" role="group" aria-label="Motion"><button type="button" data-motionset="flow" aria-pressed="false">Gentle</button><button type="button" data-motionset="still" aria-pressed="false">Still</button></div>
+  <p class="st-note">Your choices stay on this device. Motion also stops if your device is set to reduce it. The Quiet palette uses plain greys that don't draw attention.</p>
+</div>
+<div class="pop" id="pop" role="dialog" aria-modal="false" hidden></div>
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+<div class="exit-veil" id="exitVeil" hidden></div>
+
+<dialog id="navDlg" aria-labelledby="navDlgTitle">
+  <div class="dlg-head"><div><h2 id="navDlgTitle">Explore Aster</h2><button type="button" class="btn sm" data-open-studio style="justify-self:start">Colours and display</button></div><button type="button" class="icon-btn" data-close aria-label="Close">__I_close__</button></div>
+  <div class="dlg-body"><div class="ex-tiles" id="exTiles"></div><h3>Also here</h3><ul class="ex-more" id="exMore"></ul></div>
+</dialog>
+
+<dialog id="fitDlg" aria-labelledby="fitDlgTitle">
+  <div class="dlg-head"><div><h2 id="fitDlgTitle">What brings you here?</h2><p class="muted">Pick the closest. You can explore everything from anywhere.</p></div><button type="button" class="icon-btn" data-close aria-label="Close">__I_close__</button></div>
+  <div class="dlg-body"><div class="fit-list" id="fitList"></div></div>
+</dialog>
+
+<dialog id="infoDlg" aria-labelledby="infoDlgTitle">
+  <div class="dlg-head"><div><p class="eyebrow" id="infoDlgEyebrow"></p><h2 id="infoDlgTitle"></h2></div><button type="button" class="icon-btn" data-close aria-label="Close">__I_close__</button></div>
+  <div class="dlg-body" id="infoDlgBody"></div>
+</dialog>
+<!--SCRIPT-->
+</body>
+</html>
